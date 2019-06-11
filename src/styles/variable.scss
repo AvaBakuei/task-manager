@@ -1,21 +1,27 @@
-// --------------- Color
+//-------------------------Colors
 
-$color--firstBg: #12141d;
-$color--secondBg: #0c0d14;
-$color--thirdBg: #32353f;
-$color--forthBg: #181b25;
+// Primary
+$color--firstPrimary: #3023ae;
+$color--secondPrimary: #c96dd8;
+$color--thirdPrimary: #3b2eb2;
+
+// Text
 $color--firstText: #ffffff;
-$color--secondText: #6d6d72;
-$color--thirdText: #8b8e9f; //159
-$color--firstFooter: #727f7f; //127
-$color--secondFooter: #ececec; //236
-$color--firstPrimary: #00cf9c;
-$color--secondPrimary: #123272;
-$color--thirdPrimary: #ff0a45;
-$color--border: #d8d8d8;
-$color--orderBorder: #252832;
-$color--dark: #000000;
-$color--yellow: #e7b538;
+$color--secondText: #293039;
+$color--thirdText: #4e5c66;
+$color--forthText: #94a1ac;
+$color--fifthText: #abaab0;
+
+// Background
+$color--firstBg: #f6f9fd;
+$color--secondBg: #1c232b;
+
+//Others
+$color--border: #ccd2d7;
+$color--facebook: #4464b1;
+$color--twitter: #57acef;
+$color--linkedin: #007bb6;
+$color--vimeo: #62a0ad;
 
 // ----------------------- Media Widths
 
