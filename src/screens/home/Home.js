@@ -29,6 +29,24 @@ const featuresData = [
 	},
 ];
 const trackingSection = {
+	img1: require("../../assets/media/img1.png"),
+	img2: require("../../assets/media/img2.png"),
+	icon: "icon-clock",
+	title: "Keep Tracking Your Work Progress",
+	caption:
+		"Donec tempor finibus ante ac luctus. Fusce facilisis nisi vel odio tincidunt maximus. Pellentesque tempus gravida viverra. Pellentesque dui vehicula. ",
+	btnTitle: "Learn More",
+};
+
+const analyseSection = {
+	img1: require("../../assets/media/img3.png"),
+	img2: require("../../assets/media/img2.png"),
+	icon: "icon-list",
+	title: "Analyse Your Expertise & Capabilities",
+	caption:
+		"Donec tempor finibus ante ac luctus. Fusce facilisis nisi vel odio tincidunt maximus. Pellentesque tempus gravida viverra. Pellentesque dui vehicula. ",
+	btnTitle: "Learn More",
+};
 	return (
 		<div className="wrapper">
 			<Header className="home-header">
@@ -72,6 +90,7 @@ const trackingSection = {
 						</div>
 					))}
 				</section>
+				<Section data={trackingSection} className="tracking-section" />
 				<Section data={analyseSection} className="analyse-section" />
 			</main>
 		</div>
