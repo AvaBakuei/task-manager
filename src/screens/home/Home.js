@@ -2,18 +2,13 @@ import React from "react";
 
 //local
 import "./Home.scss";
-const data = [
-	"primary",
-	"secondary",
-	"success",
-	"danger",
-	"warning",
-	"info",
-	"light",
-	"dark",
-];
+import { Header } from "../../components/elements/header/Header";
 const Home = () => {
-	return <main>Home</main>;
+	return (
+		<div className="wrapper">
+			<Header />
+		</div>
+	);
 };
 
 export { Home };

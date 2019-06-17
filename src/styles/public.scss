@@ -7,3 +7,18 @@ body {
 	font-family: Montserrat, sans-serif;
 	box-sizing: border-box;
 }
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 1.5rem;
+
+	@media (max-width: $lg-width) {
+		width: 992px;
+	}
+	@media (max-width: $md-width) {
+		width: 768px;
+	}
+	@media (max-width: $sm-width) {
+		width: 100%;
+	}
+}
