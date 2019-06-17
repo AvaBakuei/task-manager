@@ -6,8 +6,8 @@
 	}
 	.home-header {
 		.header-bottom {
-			@include flexbox(space-around, flex-start);
-			padding: 3em 10em;
+			@include flexbox(space-between, flex-start);
+
 			.header-content {
 				@include flexbox(center, flex-start, column);
 				margin-top: 5rem;
@@ -15,15 +15,15 @@
 
 				h2 {
 					max-width: 22rem;
-					font-size: 2em;
+					font-size: 1.85em;
 					font-weight: 600;
 				}
 				p {
 					max-width: 24rem;
-					font-size: 1.15em;
+					font-size: 1em;
 					font-weight: 400;
 					opacity: 0.7;
-					margin: 2rem 0 4rem 0;
+					margin: 2rem 0 3rem 0;
 				}
 			}
 			.header-mockup {
@@ -39,6 +39,7 @@
 			}
 		}
 	}
+
 	.features {
 		@include flexbox(space-between, flex-start);
 		margin-bottom: 4rem;
