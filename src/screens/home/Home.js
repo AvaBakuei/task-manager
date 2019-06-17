@@ -5,7 +5,28 @@ import { withRouter } from "react-router-dom";
 import "./Home.scss";
 import { Header } from "../../components/elements/header/Header";
 import { Button } from "../../components/commons";
-const Home = withRouter(({ history }) => {
+const featuresData = [
+	{
+		icon: "cloud",
+		title: "Cloud Storage",
+		caption: "Donec tempor finibus ante ac luctus. Fusce facilisis nisi.",
+	},
+	{
+		icon: "system",
+		title: "Powerful System",
+		caption: "Donec tempor finibus ante ac luctus. Fusce facilisis nisi.",
+	},
+	{
+		icon: "performance",
+		title: "Heigh Performance",
+		caption: "Donec tempor finibus ante ac luctus. Fusce facilisis nisi.",
+	},
+	{
+		icon: "management",
+		title: "Easy Management",
+		caption: "Donec tempor finibus ante ac luctus. Fusce facilisis nisi.",
+	},
+];
 	return (
 		<div className="wrapper">
 			<Header className="home-header">
@@ -35,6 +56,22 @@ const Home = withRouter(({ history }) => {
 					</div>
 				</div>
 			</Header>
+			<main>
+				<section className="center features">
+					{featuresData.map((item, index) => (
+						<div className="features-item" key={index}>
+							<span
+								className={`features-item__icon ${item.icon}`}
+							>
+								<i className={`icon-${item.icon}`} />
+							</span>
+							<h3>{item.title}</h3>
+							<p>{item.caption}</p>
+						</div>
+					))}
+				</section>
+				<Section data={progressSection} />
+			</main>
 		</div>
 	);
 });
