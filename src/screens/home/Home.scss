@@ -1,5 +1,42 @@
 @import "../../styles/config.scss";
 
-img {
-	width: 300px;
+.wrapper {
+	h1 {
+		display: none;
+	}
+	.home-header {
+		.header-bottom {
+			@include flexbox(space-around, flex-start);
+			padding: 3em 10em;
+			.header-content {
+				@include flexbox(center, flex-start, column);
+				margin-top: 5rem;
+				color: $color--firstText;
+
+				h2 {
+					max-width: 22rem;
+					font-size: 2em;
+					font-weight: 600;
+				}
+				p {
+					max-width: 24rem;
+					font-size: 1.15em;
+					font-weight: 400;
+					opacity: 0.7;
+					margin: 2rem 0 4rem 0;
+				}
+			}
+			.header-mockup {
+				@include flexbox();
+				width: 25rem;
+				&__img {
+					width: 100%;
+
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
 }

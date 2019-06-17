@@ -1,17 +1,17 @@
 @import "../../../styles/config.scss";
 
 .header {
-	@include flexbox(space-between, center);
+	@include flexbox(center, center, column);
 	background: linear-gradient(
 		330deg,
 		$color--firstPrimary,
 		$color--secondPrimary 99%
 	);
-	.header-section {
+	.header-top {
 		@include flexbox(space-between, center);
 		&__logo {
-			width: 4rem;
-			height: 4rem;
+			width: 3rem;
+			height: 3rem;
 
 			img {
 				width: 100%;

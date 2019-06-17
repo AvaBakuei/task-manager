@@ -1,0 +1,48 @@
+@import "../../../styles/config.scss";
+
+.button {
+	@include flexbox(center, center);
+	min-width: 11rem;
+	padding: 1em 2em;
+	outline: 0;
+	color: $color--firstPrimary;
+	font-size: 1em;
+	border-radius: 3rem;
+	border: 2px solid transparent;
+	box-shadow: 0px 35px 55px 0 rgba(0, 0, 0, 0.15);
+	background-color: $color--firstText;
+	transition: all 0.2s;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $color--firstPrimary;
+		color: $color--firstText;
+	}
+	span {
+		font-weight: 600;
+	}
+	i {
+		font-size: 0.85em;
+		font-weight: 600;
+		margin-left: 0.35rem;
+	}
+
+	&.public {
+		border: 2px solid $color--firstPrimary;
+		color: $color--firstPrimary;
+		&:hover {
+			background-color: $color--firstPrimary;
+			color: $color--firstText;
+		}
+	}
+	&.primary {
+		background-color: $color--firstPrimary;
+		box-shadow: 0 7px 15px 0 rgba($color--firstPrimary, 0.1);
+		color: $color--firstText;
+		&:hover {
+			border: 2px solid $color--firstPrimary;
+			background-color: $color--firstText;
+			color: $color--firstPrimary;
+		}
+	}
+}
