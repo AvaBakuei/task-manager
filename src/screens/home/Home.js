@@ -5,6 +5,7 @@ import { withRouter } from "react-router-dom";
 import "./Home.scss";
 import { Header } from "../../components/elements/header/Header";
 import { Button } from "../../components/commons";
+import { Section } from "./components";
 const featuresData = [
 	{
 		icon: "cloud",
@@ -27,6 +28,7 @@ const featuresData = [
 		caption: "Donec tempor finibus ante ac luctus. Fusce facilisis nisi.",
 	},
 ];
+const trackingSection = {
 	return (
 		<div className="wrapper">
 			<Header className="home-header">
@@ -70,7 +72,7 @@ const featuresData = [
 						</div>
 					))}
 				</section>
-				<Section data={progressSection} />
+				<Section data={analyseSection} className="analyse-section" />
 			</main>
 		</div>
 	);
