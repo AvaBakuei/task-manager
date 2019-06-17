@@ -39,4 +39,85 @@
 			}
 		}
 	}
+	.features {
+		@include flexbox(space-between, flex-start);
+		margin-bottom: 4rem;
+
+		.features-item {
+			@include flexbox(center, center, column);
+			margin: 0.5em;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&__icon {
+				@include flexbox(center, center);
+				width: 3.5rem;
+				height: 3.5rem;
+				border-radius: 100%;
+
+				&.cloud {
+					background: $color--blue;
+				}
+				&.system {
+					background: $color--green;
+				}
+				&.performance {
+					background: $color--purple;
+				}
+				&.management {
+					background: $color--orange;
+				}
+
+				i {
+					font-size: 2em;
+					color: $color--firstText;
+				}
+			}
+			h3 {
+				font-size: 1.15em;
+				font-weight: 500;
+				text-align: center;
+				color: $color--secondText;
+				margin: 2rem 0 1rem 0;
+			}
+			p {
+				max-width: 15rem;
+				font-size: 0.85em;
+				text-align: center;
+				line-height: 1.75em;
+				color: $color--thirdText;
+			}
+		}
+	}
+	.tracking-section {
+		margin-bottom: 10rem;
+		.section-left {
+			&:before {
+				right: 25%;
+			}
+		}
+	}
+	.analyse-section {
+		flex-direction: row-reverse;
+
+		.section-left {
+			&:before {
+				left: 25%;
+			}
+
+			img {
+				&:first-child {
+					width: 19rem;
+					border-radius: 0.5rem;
+					overflow: hidden;
+				}
+			}
+		}
+	}
 }
