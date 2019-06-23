@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import ReactPlayer from "react-player";
 
 //local
 import "./Home.scss";
@@ -49,6 +50,10 @@ const analyseSection = {
 	btnTitle: "Learn More",
 };
 const Home = () => {
+	const [play, setPlay] = useState(false);
+	const handlePlay = () => {
+		setPlay(!play);
+	};
 	return (
 		<div className="wrapper">
 			<Header
@@ -97,6 +102,58 @@ const Home = () => {
 				</section>
 				<Section data={trackingSection} className="tracking-section" />
 				<Section data={analyseSection} className="analyse-section" />
+				<section className="demo">
+					<div className="demo-info">
+						<div className="demo-title">
+							<h3 className="title">How It Works</h3>
+							<p className="caption">
+								Donec tempor finibus ante ac luctus. Fusce
+								facilisis nisi vel odio tincidunt maximus.
+								Pellentesque tempus gravida viverra.
+							</p>
+						</div>
+						<div className="demo-video">
+							<ReactPlayer
+								url={require("../../assets/media/Zoom.mp4")}
+								className="react-player"
+								playing={play}
+								width="100%"
+								height="100%"
+							/>
+							<span
+								className="demo-video__btn"
+								onClick={handlePlay}
+							>
+								<i className="icon-play" />
+							</span>
+						</div>
+					</div>
+					<div className="get-app">
+						<div className="app-desc">
+							<h4 className="title">Get This App Now </h4>
+							<p className="caption">
+								Donec tempor finibus ante ac luctus. Fusce
+								facilisis nisi vel odio tincidunt maximus.
+								Pellentesque tempus gravida viverra.
+								Pellentesque dui vehicula.
+							</p>
+						</div>
+						<div className="app-link">
+							<a href="/">
+								<img
+									src={require("../../assets/media/app-store.png")}
+									alt="appstore logo"
+								/>
+							</a>
+							<a href="/">
+								<img
+									src={require("../../assets/media/google-play.png")}
+									alt="googleplay logo"
+								/>
+							</a>
+						</div>
+					</div>
+				</section>
 			</main>
 		</div>
 	);
