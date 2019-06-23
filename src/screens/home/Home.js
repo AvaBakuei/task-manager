@@ -51,7 +51,10 @@ const analyseSection = {
 const Home = () => {
 	return (
 		<div className="wrapper">
-			<Header className="home-header">
+			<Header
+				className="home-header"
+				img={require("../../assets/media/bg.svg")}
+			>
 				<h1>Task-Manager</h1>
 				<div className="center header-bottom">
 					<div className="header-content">

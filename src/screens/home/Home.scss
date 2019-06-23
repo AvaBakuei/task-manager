@@ -5,6 +5,7 @@
 		display: none;
 	}
 	.home-header {
+		background: transparent;
 		.header-bottom {
 			@include flexbox(space-between, flex-start);
 
