@@ -14,8 +14,8 @@ const Section = props => {
 			</div>
 			<div className="section-right">
 				{data.icon ? <i className={data.icon} /> : ""}
-				<h2>{data.title}</h2>
-				<p>{data.caption}</p>
+				<h2 className="title">{data.title}</h2>
+				<p className="caption">{data.caption}</p>
 				<a href="/">
 					<Button
 						className="primary"

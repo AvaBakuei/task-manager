@@ -15,3 +15,18 @@ body {
 	width: 100%;
 	padding: 3em 14em;
 }
+
+.title {
+	max-width: 20rem;
+	margin-bottom: 1.5rem;
+	font-size: 1.7em;
+	font-weight: 600;
+	color: $color--secondText;
+}
+.caption {
+	max-width: 26rem;
+	margin-bottom: 1.5rem;
+	font-size: 0.85em;
+	line-height: 1.75em;
+	color: $color--thirdText;
+}
